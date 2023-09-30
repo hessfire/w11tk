@@ -46,7 +46,8 @@ namespace w11tk
             {
                 Console.WriteLine($"[-] no admin perms provided, please restart app as admin and try again");
                 Console.WriteLine($"[*] press any key to exit...");
-                Console.ReadKey();
+                Console.ReadKey();  
+                Console.ResetColor();
                 Environment.Exit(1337);
             }
 
@@ -75,7 +76,8 @@ namespace w11tk
 
                 Console.WriteLine("[+] done!");
                 Console.WriteLine("[*] press any key to exit...");
-                Console.ReadKey();
+                Console.ReadKey();     
+                Console.ResetColor();
                 Environment.Exit(1337); 
             }
 
@@ -123,6 +125,8 @@ namespace w11tk
 
             Console.WriteLine("[*] press any key to exit...");
             Console.ReadKey();
+
+            Console.ResetColor();
         }
     }
 }
